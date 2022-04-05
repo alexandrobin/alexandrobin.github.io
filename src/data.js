@@ -1,4 +1,4 @@
-{
+module.exports = {
     "id": {
         "name": "Robin",
         "firstname": "Alexandre",
@@ -15,14 +15,16 @@
             "period": "2020-today",
             "logo": "",
             "jobTitle": "Team Lead Tech Community",
-            "description": "Created and managed a board of 11 Senior, Director and VP of Technology (engine, tools, projects) to advise the management on Tech strategy and be the voice of productions\nCreated the worldwide community of Tech Partners, gathering all the people in charge of technologies accross our studios & projects"
+            "description": `Created and managed a board of 11 Senior, Director and VP of Technology (engine, tools, projects) to advise the management on Tech strategy and be the voice of productions \n Created the worldwide community of Tech Partners (200+ members), gathering all the people in charge of technologies accross our studios & projects`
         },
         {
             "company": "Ubisoft",
             "period": "2018-2020",
             "logo": "",
             "jobTitle": "HRIS Business Analyst",
-            "description": "Product Owner on Minerva, Ask Ubisoft, Express Yourself & Pulse Survey Business Analysis on MAP\nUsers needs assessments (HRs, Managers, Team members, IHR) Stakeholders management\nDesign of new features and solutions, business requirements specifications Follow-up with the developers during and after the sprints"
+            "description": `Product Owner on Minerva, Ask Ubisoft, Express Yourself & Pulse Survey Business Analysis on MAP \n
+             Users needs assessments (HRs, Managers, Team members, IHR) Stakeholders management \n
+            Design of new features and solutions, business requirements specifications Follow-up with the developers during and after the sprints`
         },
         {
             "company": "Deloitte",
@@ -49,7 +51,7 @@
     "education":[
         {
             "name": "Preparatory School - ENS Economy & Gestion (D2)",
-            "school": "Lycée Turgot - Paris & Sorbonnes Paris 1",
+            "school": "Lycée Turgot - Paris & Sorbonne Paris 1",
             "date": "2011 - 2013"
         },
         {

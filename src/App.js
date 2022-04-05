@@ -1,6 +1,6 @@
 import './App.css';
 import styled from "styled-components"
-import data from './data.json';
+import data from './data';
 
 
 function App() {
@@ -24,6 +24,9 @@ function App() {
               <li>
                 <a href = {data.id.linkedin}>{data.id.linkedin}</a>
               </li>
+              <li>
+                <a href = "https://alexandrobin.github.io">Check-out on alexandrobin.github.io</a>
+              </li>
             </ul>
           </section>
         </ResumeHeader>
@@ -39,7 +42,9 @@ function App() {
                 </ExperienceDetails>
                 <ExperienceDescription>
                 <h3>{e.jobTitle}</h3>
-                <p>{e.description}</p>
+                {e.description.split('\n').map((line) => 
+                  <p>{line}</p>)
+                }
                 </ExperienceDescription>
               </Experience>
           )})}
@@ -60,17 +65,29 @@ function App() {
         </ResumeMain>
         <ResumeFooter>
           <h1 style={{'marginLeft':"2rem","color":"#005f73"}}>Skills</h1>
-          <div>
+          <SkillsContainer>
             <section>
-              Scrum Master (certifié)
-              Javascript
-              React
-              NodeJs
-              HTML/CSS 
-              Github 
+              <h3>Computer Science</h3>
+                <p>Javascript (React/Node)</p>
+                <p>HTML/CSS </p>
+                <p>Github </p>
 
             </section>
-          </div>
+            <section>
+              <h3>Softskills</h3>
+                <p>Scrum Master (certified)</p>
+                <p>Trained to Workshop facilitation</p>
+              
+
+            </section>
+            <section>
+              <h3>Languages & Hobbies</h3>
+                <p>English : fluent</p>
+                <p>Lived 7 years abroad (Angola & Syria)</p>
+                <p>Guitar, video games & sports</p>
+            </section>
+
+          </SkillsContainer>
         </ResumeFooter>
         
       </ResumeContainer>
@@ -87,6 +104,19 @@ const ResumeContainer = styled.div`
     background-color: #fefefe;
     box-shadow: 5px 5px 0 0 #94d2bd;
     overflow: hidden;
+
+    @media print {
+      margin:0;
+      border-radius:0;
+      box-shadow: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      justify-content: center;
+      align-items: center;
+    }
 `
 
 const ResumeHeader = styled.header`
@@ -112,21 +142,21 @@ const ResumeHeader = styled.header`
         text-align:right;
         list-style-type:none;
         > a {
+          font-size:0.8rem;
           text-decoration:none;
           color:white;
       }
     }
 `
 const ResumeMain = styled.main`
-    height: 44rem;
+    height: 47rem;
     background-color: #f5f5fb;
     padding-top: 1rem;
 `
 
 const ResumeFooter = styled.footer`
-    height: 15rem;
+    height: 13rem;
     width: 100%;
-    display: flex;
 `
 
 const Experience = styled.section `
@@ -159,13 +189,14 @@ const ExperienceDescription = styled.section`
     > p {
       margin:0;
       font-size:0.8rem;
-      margin-bottom:10px;
     }
 `
 
 const Avatar = styled.img`
     margin:10px;
-    border-radius:50%
+    border-radius:50%;
+    width:100px;
+    height:100px;
 `
 
 const Education = styled.section `
@@ -189,5 +220,23 @@ const EducationDetails = styled.section`
     }
 `
 
+
+const SkillsContainer = styled.section`
+    display:flex;
+    margin:0px 20px 0px 20px;
+    justify-content:space-evenly;
+
+    >h1 {
+      margin:5px 0px 5px; 0px;
+    };
+    > section {
+      >h3 {
+        margin:5px 0px 5px; 0px;
+      }
+      >p{
+        margin:0;
+      }
+    }
+`
 
 export default App;
