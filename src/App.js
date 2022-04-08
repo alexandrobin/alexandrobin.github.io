@@ -31,7 +31,7 @@ function App() {
           </section>
         </ResumeHeader>
         <ResumeMain> 
-          <h1 style={{'marginLeft':"2rem","color":"#005f73"}}>Experiences</h1>
+          <h2 style={{'marginLeft':"2rem","color":"#005f73"}}>Experiences</h2>
           {
           data.experiences.map((e,i)=>  {
           return (
@@ -48,7 +48,7 @@ function App() {
                 </ExperienceDescription>
               </Experience>
           )})}
-          <h1 style={{'marginLeft':"2rem","color":"#005f73"}}>Education</h1>
+          <h2 style={{'marginLeft':"2rem","color":"#005f73"}}>Education</h2>
           <Education>
             {data.education.map((e,i)=>  {
             return (
@@ -64,7 +64,7 @@ function App() {
           
         </ResumeMain>
         <ResumeFooter>
-          <h1 style={{'marginLeft':"2rem","color":"#005f73"}}>Skills</h1>
+          <h2 style={{'marginLeft':"2rem","color":"#005f73"}}>Skills</h2>
           <SkillsContainer>
             <section>
               <h3>Computer Science</h3>
