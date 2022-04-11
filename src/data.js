@@ -2,7 +2,7 @@ module.exports = {
     "id": {
         "name": "Robin",
         "firstname": "Alexandre",
-        "currentJob":"Looking for AP Tech positions",
+        "currentJob":"Looking for an AP Tech position",
         "currentCompany":"Ubisoft",
         "city": "Paris",
         "phone": "06.48.71.26.69",
