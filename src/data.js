@@ -2,12 +2,13 @@ module.exports = {
     "id": {
         "name": "Robin",
         "firstname": "Alexandre",
-        "currentJob":"Team Lead Tech Community @Ubisoft",
+        "currentJob":"Looking for AP Tech positions",
         "currentCompany":"Ubisoft",
         "city": "Paris",
-        "phone": "0648712669",
-        "mail": "alexandre44.robin@gmail.com",
-        "linkedin": "fr.linkedin.com/in/robinalexandre"
+        "phone": "06.48.71.26.69",
+        "mail": "alexandre.robin2@ubisoft.com",
+        "linkedin": "fr.linkedin.com/in/robinalexandre",
+        "bio":"Passionate by the video game industry and technologies, my goal is to join a production team to contribute to ship a game with the best possible quality"
     },
     "experiences": [
         {
@@ -15,37 +16,37 @@ module.exports = {
             "period": "2020-today",
             "logo": "",
             "jobTitle": "Team Lead Tech Community",
-            "description": `Created and managed a board of 11 Senior, Director and VP of Technology (engine, tools, projects) to advise the management on Tech strategy and be the voice of productions \n Created the worldwide community of Tech Partners (200+ members), gathering all the people in charge of technologies accross our studios & projects`
+            "description": `Created and managed the TAB, a board composed of 11 Senior, Director and VP of Technology (engine, tools, projects) to advise the management on how to achieve convergence and to be the voice of productions \n Created the worldwide community of Tech Partners (200+ members), gathering all the people in charge of technologies across our studios & projects \n Launched the Nova Community (20 members), a group composed of young talents across all our studios and projects`
         },
         {
             "company": "Ubisoft",
             "period": "2018-2020",
             "logo": "",
-            "jobTitle": "HRIS Business Analyst",
-            "description": `Product Owner on Minerva, Ask Ubisoft, Express Yourself & Pulse Survey Business Analysis on MAP \n
-             Users needs assessments (HRs, Managers, Team members, IHR) Stakeholders management \n
-            Design of new features and solutions, business requirements specifications Follow-up with the developers during and after the sprints`
+            "jobTitle": "HRIS Product Owner",
+            "description": `Product Owner on several in-house HR tools at Ubisoft (Position Management, Performance & Feedback, Express Yourself)  \n
+            Users needs assessments (HRs, Managers, Team members, IHR) and stakeholders management \n
+            Design of new features and solutions, business requirements specifications \n Scrum Master to prepare and follow up the sprints with the Dev team (Jira, Sprint planning, Backlog management...)`
         },
         {
             "company": "Deloitte",
             "period": "2017-2018",
             "logo": "",
             "jobTitle": "HR Consultant",
-            "description": "Stream lead Core HR on international projects\nDesign of target HR processes, facilitation of workshops, data migration and integration interfaces\nReporting to executives for strategical meetings\nPreparation and automation (VBA) of the test strategy\nDevelopment of a Slack bot (Javascript / NodeJS) as a side project Workday HCM certified"
+            "description": "Stream lead Core HR on international projects\nDesign of target HR processes, facilitation of workshops, data migration and integration interfaces\nReporting to executives for strategical meetings\nPreparation and automation (VBA) of the test strategy\nDevelopment of a Slack bot (Javascript / NodeJS) as a side project"
         },
         {
-            "company": "Fabernovel",
+            "company": "Fabernovel Code",
             "period": "2016-2017",
             "logo": "",
             "jobTitle": "HR Manager",
-            "description": "Creation of the HR function\nRecruitment of developers, designers, sales and support functions Monitoring of the onboarding process\nDesign of the training and continuous improvement plan\nRelationship management with legal training partners and payroll suppliers"
+            "description": "Creation of the HR function in a small web agency (up to 50 people)\nRecruitment of developers, designers, sales and support functions \n Scrum Master/Agile Coach on a few projects"
         },
         {
             "company": "Ubisoft",
             "period": "2015-2016",
             "logo": "",
             "jobTitle": "HR Generalist / Campus Manager (internship / apprenticeship)",
-            "description": "Follow-up of Ubisoft Mobile studios and International Headquarters’ teams Recruitment for HR/Communication/Consumer Marketing Knowledge and IT teams HR Communication Management / Brand Employer and School Relationships"
+            "description": "Follow-up of Ubisoft Mobile studios and International Headquarters’ teams \n Recruitment for HR/Communication/Consumer Marketing Knowledge and IT teams HR Communication Management / Brand Employer and School Relationships"
         }   
     ],
     "education":[

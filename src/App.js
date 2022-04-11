@@ -12,6 +12,7 @@ function App() {
           <section>
             <h1>{data.id.firstname} {data.id.name}</h1>
             <h2>{data.id.currentJob}</h2>
+            <p>{data.id.bio}</p>
           </section>
           <section>
             <ul>
@@ -25,7 +26,7 @@ function App() {
                 <a href = {data.id.linkedin}>{data.id.linkedin}</a>
               </li>
               <li>
-                <a href = "https://alexandrobin.github.io">Check-out on alexandrobin.github.io</a>
+                <a href = "https://alexandrobin.github.io">Available online on alexandrobin.github.io</a>
               </li>
             </ul>
           </section>
@@ -84,7 +85,7 @@ function App() {
               <h3>Languages & Hobbies</h3>
                 <p>English : fluent</p>
                 <p>Lived 7 years abroad (Angola & Syria)</p>
-                <p>Guitar, video games & sports</p>
+                <p>Guitar, video games (R6), sports & coding</p>
             </section>
 
           </SkillsContainer>
@@ -120,31 +121,45 @@ const ResumeContainer = styled.div`
 `
 
 const ResumeHeader = styled.header`
-    height: 8.5rem;
+    height: 9rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background: #005f73;
-    > section > h1 {
-      font-size:1.8rem;
-      margin-bottom:0;
-      color:white;
-    };
-    > section > h2 {
-      font-size:0.8rem;
-      font-weight:lighter;
-      margin-top:0;
-      color:white;
-    }
-    > section > ul {
-      margin-top:2rem;
-      > li {
-        text-align:right;
-        list-style-type:none;
-        > a {
-          font-size:0.8rem;
-          text-decoration:none;
-          color:white;
+    > section {
+      > h1 {
+        font-size:1.8rem;
+        margin-bottom:0;
+        color:white;
+      }
+
+      > h2 {
+        font-size:0.9rem;
+        font-weight:lighter;
+        margin-top:0;
+        margin-bottom:5px;
+        color:white;
+      }
+
+      > p {
+        font-size:0.8rem;
+        color:white;
+        font-weight:lighter;
+        margin-top:0;
+        font-style:italic;
+        width:350px;
+      }
+
+      ul {
+        margin-top:2rem;
+        > li {
+          text-align:right;
+          list-style-type:none;
+          > a {
+            font-size:0.8rem;
+            text-decoration:none;
+            color:white;
+        }
       }
     }
 `
@@ -155,7 +170,7 @@ const ResumeMain = styled.main`
 `
 
 const ResumeFooter = styled.footer`
-    height: 13rem;
+    height: 10rem;
     width: 100%;
 `
 
